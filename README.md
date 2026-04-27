@@ -9,7 +9,7 @@ Upload PDFs and ask questions — answers come from your documents first, fall b
 
 | Layer    | Tech                                                    |
 |----------|---------------------------------------------------------|
-| Backend  | Python · Flask · LangChain · FAISS · OpenAI / Gemini    |
+| Backend  | Python · Flask · LangChain · FAISS ·  Gemini    |
 | Frontend | React (CRA) · axios                                     |
 | Storage  | Local FAISS index + uploaded PDFs in `backend/uploads/` |
 
@@ -75,8 +75,8 @@ Backend runs at **http://localhost:5000**.
 | `LLM_PROVIDER`  | `openai` (default) or `gemini`          |
 | `OPENAI_API_KEY`| Required if using OpenAI                |
 | `GOOGLE_API_KEY`| Required if using Gemini                |
-| `APP_USERNAME`  | Login username (default: `admin`)       |
-| `APP_PASSWORD`  | Login password (default: `admin123`)    |
+| `APP_USERNAME`  | Login username (default: `****`)       |
+| `APP_PASSWORD`  | Login password (default: `******`)    |
 | `APP_SECRET`    | HMAC signing secret — change for prod   |
 
 ### 2. Frontend
@@ -94,8 +94,8 @@ Frontend runs at **http://localhost:3000** and proxies API calls to the backend.
 ## 🔑 Default Credentials
 
 ```
-username: admin
-password: admin123
+username: ****
+password: ********
 ```
 
 (Change them in `backend/.env`.)
